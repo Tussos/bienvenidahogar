@@ -29,3 +29,22 @@
   <script src="script.js"></script>
 </body>
 </html>
+<script> document.getElementById("loginForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  // Simulación de login (puedes reemplazar esto con una llamada a tu backend)
+  if (email === "admin@example.com" && password === "1234") {
+    alert("Inicio de sesión exitoso / Login successful");
+  } else {
+    alert("Correo o contraseña incorrectos / Incorrect email or password");
+  }
+});
+
+function registerTechnician() {
+  // Redirige a la página de registro de técnicos
+  window.location.href = "register-technician.html";
+}
+</script>
